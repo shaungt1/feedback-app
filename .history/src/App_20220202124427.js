@@ -6,6 +6,8 @@ import FeedbackForm from "./components/FeedbackForm";
 import AboutIconLink from "./components/AboutIconLink";
 import AboutPage from "./pages/AboutPage";
 import { FeedbackProvider } from "./context/FeedbackContext";
+import Modal from "./Modal";
+import useModal from "./useModal";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
 
             <Route path="/about" element={<AboutPage />} />
           </Routes>
-
+          <Modal />
           <AboutIconLink />
         </div>
       </Router>

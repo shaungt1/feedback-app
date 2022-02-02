@@ -29,7 +29,6 @@ export const FeedbackProvider = ({ children }) => {
   };
 
   // Add feedback
-  // Pass param newFeedback to addFeedback function
   const addFeedback = async (newFeedback) => {
     const response = await fetch("/feedback", {
       method: "POST",
@@ -40,13 +39,13 @@ export const FeedbackProvider = ({ children }) => {
     });
 
     const data = await response.json();
-    // fill with data from backend and spreed newFeedback with data
+
     setFeedback([data, ...feedback]);
   };
 
   // Delete feedback
   const deleteFeedback = async (id) => {
-    if (window.confirm("Are you sure you want to delete this?")) {
+    if (window.confirm("Are you sure you want to delete?")) {
       await fetch(`/feedback/${id}`, { method: "DELETE" });
 
       setFeedback(feedback.filter((item) => item.id !== id));

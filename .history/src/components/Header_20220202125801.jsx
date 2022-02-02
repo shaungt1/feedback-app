@@ -26,7 +26,7 @@ function Header({ text, bgColor, textColor }) {
            <button className="button-default" onClick={toggle}>
             Developer Info
           </button>
-          <Modal className="modal-content" isShowing={isShowing} hide={toggle} />
+          <Modal isShowing={isShowing} hide={toggle} />
           
           {/* </Button> */}
         

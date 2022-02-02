@@ -270,7 +270,6 @@ input:focus {
     border-radius: 3px;
     max-width: 500px;
     padding: 2rem;
-    margin: 500px auto;
   }
 
   .modal-header {
@@ -279,18 +278,13 @@ input:focus {
   }
 
   .modal-close-button {
-    font-size: 2.4rem;
-    font-weight: 800;
-    line-height: 3;
-    color: rgb(29, 29, 29);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
     opacity: 0.3;
-    border: none;
-    border-radius: 8px;
-    width: 100px;
-    height: 40px;
     cursor: pointer;
-    padding: 25px;
-    background-color: #141414;
+    border: none;
   }
 
   .modal-dialog {
@@ -352,6 +346,7 @@ input:focus {
   .button-default {
     background: #247ba0;
     color: #fff;
+
     bottom: 50%;
     right: 50%;
     position: absolute;

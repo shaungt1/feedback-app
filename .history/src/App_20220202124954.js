@@ -6,8 +6,12 @@ import FeedbackForm from "./components/FeedbackForm";
 import AboutIconLink from "./components/AboutIconLink";
 import AboutPage from "./pages/AboutPage";
 import { FeedbackProvider } from "./context/FeedbackContext";
+import Modal from "./components/Modal";
+import useModal from "./components/useModal";
 
 function App() {
+  const { isShowing, toggle } = useModal();
+
   return (
     <FeedbackProvider>
       <Router>
@@ -28,7 +32,10 @@ function App() {
 
             <Route path="/about" element={<AboutPage />} />
           </Routes>
-
+          <button className="button-default" onClick={toggle}>
+            Show Modal
+          </button>
+          <Modal isShowing={isShowing} hide={toggle} />
           <AboutIconLink />
         </div>
       </Router>

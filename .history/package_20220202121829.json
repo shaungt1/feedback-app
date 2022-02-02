@@ -13,7 +13,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-modal": "^3.14.4",
     "react-router-dom": "^6.0.1",
     "react-scripts": "4.0.3",
     "uuid": "^8.3.2",
@@ -25,8 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json --port 5000",
-    "dev": "concurrently \"npm run server\" \"npm start \"",
-    "serve": "set PORT=3095"
+    "dev": "concurrently \"npm run server\" \"npm start \""
   },
   "eslintConfig": {
     "extends": ["react-app", "react-app/jest"]

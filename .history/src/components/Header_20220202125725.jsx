@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
-
-// import Button from './shared/Button';
 import Modal from "./Modal";
 import useModal from "./useModal";
+import Button from './shared/Button';
+
 
 
 function Header({ text, bgColor, textColor }) {
@@ -22,14 +22,13 @@ function Header({ text, bgColor, textColor }) {
         <h2>{text}</h2>
       </div>
 
-          {/* <Button> */}
+          <Button>
            <button className="button-default" onClick={toggle}>
             Developer Info
           </button>
-          <Modal className="modal-content" isShowing={isShowing} hide={toggle} />
-          
-          {/* </Button> */}
+          </Button>
         
+          <Modal isShowing={isShowing} hide={toggle} />
           
 
     </header>
